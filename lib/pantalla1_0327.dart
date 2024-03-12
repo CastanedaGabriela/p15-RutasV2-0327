@@ -9,14 +9,23 @@ class Pantalla1_0327 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("pantalla 1 0327"),
+        title: Text("Card P1 0327"),
+        backgroundColor: Colors.red,
       ),
       body: Center(
-        child: Column(children: [
-          Container(
-            child: Text("Castaneda ejemplo"),
-          )
-        ]),
+        child: Card(
+          elevation: 10,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+          color: Color(0xff505050),
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Text(
+              "Card Castaneda",
+              style: TextStyle(fontSize: 30, color: Color(0xfffffdfd)),
+            ),
+          ),
+        ),
       ),
     );
   }

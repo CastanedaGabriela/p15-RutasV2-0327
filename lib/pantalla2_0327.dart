@@ -8,17 +8,28 @@ class Pantalla2_0327 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pantalla 2 Castaneda"),
+        title: Text("Card P2 Castaneda"),
+        backgroundColor: Colors.red,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {}, //si presiona boton
-              child: Text("Pantalla"),
-            )
-          ],
+        child: Container(
+          width: double.infinity,
+          height: 550,
+          color: Color(0xff383838),
+          child: Card(
+            elevation: 10,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            color: Color(0xffc3c3c3),
+            margin: EdgeInsets.all(32),
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                ' Container Card Castaneda 0327',
+                style: TextStyle(fontSize: 30),
+              ),
+            ),
+          ),
         ),
       ),
     );

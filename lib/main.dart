@@ -10,6 +10,7 @@ class MiApp0327 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
         "/": (context) => PantallaInicial_0327(),
